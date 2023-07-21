@@ -453,10 +453,15 @@ h1{
     background-color: var(--primarycolor);
     
 }
+.plus{
+    margin-bottom: 0px;
+    font-size: 18px;
+}
 .num{
     border: 1px dashed rgba(255, 255, 255, 40%);
     width: 250px;
     height: 150px;
+    font-weight: 900;
     text-align: center;
     padding-top: 25px;
     color: var(--white-color);
@@ -555,8 +560,11 @@ h1{
     cursor: pointer; 
     transition: all 0.5s;
 } 
-.box:hover{
+.box:hover {
     background-color: var(--primarycolor);
+    color: var(--white-color);
+}
+.box:hover i{
     color: var(--white-color);
 }
 .box i{
@@ -564,7 +572,7 @@ h1{
     padding: 15px;
 }
 .fa-people-pulling{
-color: var(--sb6-color);
+    color: var(--sb6-color);
 }
 .fa-diagram-project{
     color: var(--primarycolor);
@@ -624,4 +632,65 @@ color: var(--sb6-color);
 .fet-txt ul li:hover .fa-square-check{
     color: var(--white-color);
     background-color: var(--pink-color);
+}
+/* ----------team css----------- */
+.tm .teamall{
+    margin: 5px;
+    box-shadow: 0px 0px 10px -2px var(--text);
+}
+img{
+    transition: all 0.5s;
+}
+
+.teamall .tmimg {
+    overflow: hidden;   
+}
+.teamall:hover img{
+    transform: scale(1.2);
+}
+.tmnm{
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s;
+    background-color: var(--white-color);
+}
+.teamall:hover .tmnm{
+    background-color: var(--primarycolor);
+    color: var(--white-color);
+}
+.tm{
+    transition: all 0.5s;
+    position: relative;
+}
+.tm:hover {
+    transform: translateY(-10px);
+}
+.tm .sobtn {
+    position: absolute;
+    top: 10%;
+    padding: 4px 7px;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50px;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.97, 0.64, 0.19, 1.21);
+    visibility: hidden;
+}
+.sobtn i{
+    background-color: var(--white-color);
+    color: var(--primarycolor);
+    margin: 5px;
+    font-size: 20px;
+} 
+.teamall:hover .sobtn{
+    opacity: 1;
+    visibility: visible;
+    top: 40%;
+}
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover{
+    color: var(--pink-color);
 }
