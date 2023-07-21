@@ -1,20 +1,22 @@
-*{
+* {
     margin: 0 auto;
     box-sizing: border-box;
-    
+
 }
-.cont{
- width: 1320px;
- margin: 0 auto;
- padding: 100px 0px 70px;
+
+.cont {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 100px 0px 70px;
 }
+
 /* -------- varible css ----------- */
-:root{
-    --primarycolor:#0d00ff;
+:root {
+    --primarycolor: #0d00ff;
     --h-text: #5b5b98;
     --background-color: #f4f7fc;
     --white-color: #fff;
-    --text:#000000;
+    --text: #000000;
     --pink-color: #fa7070;
     --gray-color: #f9f5f5;
     --yellow-color: #facd60;
@@ -32,27 +34,31 @@
 
 
 /* -------- common css ----------- */
-a{
+a {
     text-decoration: none;
 }
-button{
+
+button {
     cursor: pointer;
 }
-h2{
+
+h2 {
     text-align: center;
     font-size: 40px;
     color: var(--text);
     font-weight: 700;
-    margin:0 auto;
+    margin: 0 auto;
     padding-bottom: 50px;
     max-width: 550px;
     text-transform: capitalize;
 }
-h3{
+
+h3 {
     font-size: 22px;
     font-weight: 700;
 }
-.hed{
+
+.hed {
     text-align: center;
     font-size: 15px;
     margin-bottom: 10px;
@@ -60,14 +66,17 @@ h3{
     color: var(--primarycolor);
     text-transform: uppercase;
 }
-ul{
-    list-style:none;
+
+ul {
+    list-style: none;
 }
+
 img {
     max-width: 100%;
     display: block;
 }
-.btn{
+
+.btn {
     color: var(--white-color);
     font-size: 15px;
     background-color: var(--primarycolor);
@@ -76,83 +85,103 @@ img {
     border-radius: 5px;
     border-style: none;
 }
-.btn:hover{
-    color:var(--white-color);
+
+.btn:hover {
+    color: var(--white-color);
     background-color: var(--pink-color);
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
+
 /* ------------col------------ */
-.col1{
+.col1 {
     width: 8.33%;
 }
-.col2{
+
+.col2 {
     width: 16.66%;
 }
-.col3{
+
+.col3 {
     width: 25%;
 }
-.col4{
+
+.col4 {
     width: 33.33%;
 }
-.col5{
+
+.col5 {
     width: 41.66%;
 }
-.col6{
+
+.col6 {
     width: 50%;
 }
-.col7{
+
+.col7 {
     width: 58.33%;
 }
-.col8{
+
+.col8 {
     width: 66.66%;
 }
-.col9{
-    width:75%;
+
+.col9 {
+    width: 75%;
 }
-.col10{
+
+.col10 {
     width: 83.33%;
 }
-.col11{
+
+.col11 {
     width: 91.66%;
 }
-.col12{
+
+.col12 {
     width: 100%;
 }
 
 /* -----------header css----------- */
-header{
-background-color: var(--white-color);
-width: 100%;
-position: fixed;
-z-index: 3534534;
+header {
+    background-color: var(--white-color);
+    width: 100%;
+    position: fixed;
+    z-index: 3534534;
 }
-nav{
+
+nav {
     align-items: center;
-    
+
 }
-.head{
-    
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        
-    
+
+.head {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+
 }
-header .head{
+
+header .head {
     justify-content: space-between;
     padding: 10px;
-        
+
 }
+
 header .head nav ul {
     display: flex;
 }
+
 nav ul li {
     padding: 0px 20px;
 }
+
 header .head nav ul li i {
     font-size: 10px;
     top: 1px;
@@ -164,10 +193,12 @@ header .head nav ul li a {
     font-size: 16px;
     transition: all 0.5s;
 }
+
 header .head nav ul li a:hover,
 .magnify:hover {
     color: var(--primary-color);
 }
+
 .magnify {
     font-size: 16px;
     color: var(--h-text);
@@ -187,14 +218,16 @@ header .head nav ul li a:hover,
     visibility: hidden;
     transition: all 0.5s;
 }
+
 .submenu li {
     padding: 10px;
 }
+
 .menu:hover .submenu {
     opacity: 1;
     top: 100%;
     visibility: visible;
-   
+
 }
 
 
@@ -202,42 +235,49 @@ header .head nav ul li a:hover,
 /* banner css */
 
 
-.banner-txt{
+.banner-txt {
     text-align: center;
     /* margin-top: 140px; */
     padding-top: 140px;
 }
-h1{
+
+h1 {
     color: var(--text);
     font-size: 60px;
 }
+
 /* ------services css------ */
-.service{
+.service {
     background-color: var(--gray-color);
     text-align: center;
     margin-right: 10px;
     transition: all 0.5s;
     border-radius: 5px;
-    
-    
+
+
 }
+
 .service:hover {
     transform: translateY(-10px);
     background-color: var(--white-color);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
 }
-.service:hover .serbtn{
+
+.service:hover .serbtn {
     background-color: var(--primarycolor);
     color: var(--white-color);
 }
-.fa-chart-bar,.fa-display,.fa-envelope-open-text{
+
+.fa-chart-bar,
+.fa-display,
+.fa-envelope-open-text {
     font-size: 45px;
     color: var(--pink-color);
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.ser{
+.ser {
     font-size: 16px;
     font-weight: 400;
     color: var(--h-text);
@@ -248,7 +288,8 @@ h1{
     text-align: center;
 
 }
-.serbtn{
+
+.serbtn {
     color: var(--primarycolor);
     font-size: 15px;
     text-transform: uppercase;
@@ -257,24 +298,29 @@ h1{
     padding: 17px 35px 13px;
     border-radius: 5px;
     border: 2px solid var(--primarycolor);
-    
+
 }
-.serbtn:hover{
+
+.serbtn:hover {
     color: var(--white-color);
     background-color: var(--primarycolor);
 }
+
 /* about us css */
-.about-txt{
+.about-txt {
     margin-left: 0px;
 }
+
 .about-txt .hed {
     text-align: start;
     margin-left: 20px;
 }
-.about-txt .h2{
+
+.about-txt .h2 {
     text-align: start;
     max-width: none;
 }
+
 .abo {
     font-size: 16px;
     font-weight: 400;
@@ -282,6 +328,7 @@ h1{
     line-height: 1.8;
     text-transform: lowercase;
 }
+
 .abouttxt ul li {
     position: relative;
     z-index: 1;
@@ -289,16 +336,19 @@ h1{
     margin: 0 10px 10px 0;
     border-radius: 4px;
     overflow: hidden;
-    transition:all 0.5s;
+    transition: all 0.5s;
 }
-.fa-square-check{
-  color: var(--primarycolor);
+
+.fa-square-check {
+    color: var(--primarycolor);
 }
-.abouttxt ul li:hover{
+
+.abouttxt ul li:hover {
     color: var(--white-color);
-    
+
 }
-.abouttxt ul li::after{
+
+.abouttxt ul li::after {
     background-color: var(--primarycolor);
     position: absolute;
     content: "";
@@ -307,21 +357,23 @@ h1{
     transition: all 0.5s;
     height: 100%;
     width: 0;
-    z-index:-1;
+    z-index: -1;
 }
-.abouttxt ul li:hover::after{
+
+.abouttxt ul li:hover::after {
     width: 100%;
 }
 
-.abouttxt ul li:hover .fa-square-check{
+.abouttxt ul li:hover .fa-square-check {
     color: var(--pink-color);
 }
 
 /* ------tool css----------- */
-.tool{
+.tool {
     background-color: var(--background-color);
 }
-.tlist{
+
+.tlist {
     background-color: var(--gray-color);
     padding: 40px 30px;
     transition: all 0.5s;
@@ -330,37 +382,44 @@ h1{
     position: relative;
     margin: 0 15px 30px;
 }
-.tlist .ser{
+
+.tlist .ser {
     padding: 0px;
     text-align: start;
 }
 
-.tlist .fa-computer{
-    background-color:rgba(250, 112, 112, 10%);
+.tlist .fa-computer {
+    background-color: rgba(250, 112, 112, 10%);
     color: var(--pink-color);
 }
-.fa-laptop-code{
-    color:var(--sb2-color) ;
-    background-color:rgba(68, 206, 111, 10%) ;
+
+.fa-laptop-code {
+    color: var(--sb2-color);
+    background-color: rgba(68, 206, 111, 10%);
 }
-.fa-chart-line{
-    color:var(--sb3-color) ;
-    background-color:rgba(247, 138, 203, 10%) ;
+
+.fa-chart-line {
+    color: var(--sb3-color);
+    background-color: rgba(247, 138, 203, 10%);
 }
-.fa-chalkboard-user{
-    color:var(--sb4-color) ;
-    background-color:rgba(68, 206, 111, 10%) ;
+
+.fa-chalkboard-user {
+    color: var(--sb4-color);
+    background-color: rgba(68, 206, 111, 10%);
 }
-.fa-envelopes-bulk{
-    color:var(--sb5-color) ;
-    background-color:rgba(198, 121, 227, 10%) ;
+
+.fa-envelopes-bulk {
+    color: var(--sb5-color);
+    background-color: rgba(198, 121, 227, 10%);
 }
-.fa-digital-ocean{
-    color: var(--sb6-color) ;
+
+.fa-digital-ocean {
+    color: var(--sb6-color);
     background-color: rgba(235, 107, 61, 10%);
-    
+
 }
-.tlogo{
+
+.tlogo {
     margin: 0 0 25px;
     padding: 22px 0 0 0;
     font-size: 35px;
@@ -371,23 +430,26 @@ h1{
     transition: all 0.5s;
     text-align: center;
 }
+
 .tlist:hover i {
     color: blue;
     background-color: var(--white-color);
     transform: rotate(360deg)
 }
-.tlist a{
+
+.tlist a {
     text-transform: capitalize;
     transition: all 0.5s;
     font-size: 16px;
 }
+
 .tlist:hover p,
 .tlist:hover h3,
-.tlist:hover a
- {
+.tlist:hover a {
     color: var(--white-color);
 }
-.tlist::after{
+
+.tlist::after {
     background-color: blue;
     position: absolute;
     content: "";
@@ -396,11 +458,13 @@ h1{
     transition: all 0.5s;
     height: 100%;
     width: 0;
-    z-index:-1;
+    z-index: -1;
 }
-.tlist:hover::after{
+
+.tlist:hover::after {
     width: 100%;
 }
+
 .tbtn {
     transform: translateY(20px);
     position: absolute;
@@ -431,33 +495,36 @@ h1{
 
 /* ------choose us css------- */
 
-.cho{
+.cho {
     font-size: 16px;
     font-weight: 400;
     color: var(--h-text);
     line-height: 28.8px;
     margin: 0px 10px 30px;
-    padding:0px 40px 0px 0px;
+    padding: 0px 40px 0px 0px;
     text-transform: lowercase;
     text-align: start;
 
 }
-.chous{
+
+.chous {
     text-align: start;
     margin: 0px;
     padding: 0px;
 }
 
 /* -------number css--------- */
-.number{
+.number {
     background-color: var(--primarycolor);
-    
+
 }
-.plus{
+
+.plus {
     margin-bottom: 0px;
     font-size: 18px;
 }
-.num{
+
+.num {
     border: 1px dashed rgba(255, 255, 255, 40%);
     width: 250px;
     height: 150px;
@@ -467,20 +534,23 @@ h1{
     color: var(--white-color);
     transition: all 0.5s;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
 }
-.num2{
+
+.num2 {
     color: var(--white-color);
     padding-bottom: 10px;
     text-align: center;
 }
-.num:hover{
-    
-        border-color: var(--white-color);
-        transform: translateY(-10px);
-    
+
+.num:hover {
+
+    border-color: var(--white-color);
+    transform: translateY(-10px);
+
 }
-.number .num::before{
+
+.number .num::before {
     position: absolute;
     content: "p";
     font-size: 150px;
@@ -490,26 +560,30 @@ h1{
     font-style: italic;
     color: rgba(31, 37, 158, 0.5);
 }
-.number .numc::before{
+
+.number .numc::before {
     content: "C";
     top: -20px;
 }
-.number .numa::before{
+
+.number .numa::before {
     content: "A";
     top: -20px;
 }
-.number .nume::before{
-     content: "E";
-     top: -20px;
+
+.number .nume::before {
+    content: "E";
+    top: -20px;
 }
 
 /* ----------gallery css------------ */
-.slide{
+.slide {
     margin: 0px 20px;
     position: relative;
     overflow: hidden;
 }
-.slide i{
+
+.slide i {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -521,14 +595,17 @@ h1{
     transform: scale(0);
     transition: all 0.5s;
 }
-.slide:hover i{
+
+.slide:hover i {
     transform: scale(1);
 }
-.slide i:hover{
+
+.slide i:hover {
     background-color: var(--pink-color);
     transform: rotate(180deg);
 }
-.slide .gtxt{
+
+.slide .gtxt {
     position: absolute;
     left: 0px;
     bottom: 45px;
@@ -538,66 +615,82 @@ h1{
     transform: translateX(-300px);
     transition: all 0.5s;
 }
-.slide:hover .gtxt{
+
+.slide:hover .gtxt {
     transform: translatex(0px);
 
 }
-.gtxt h3:hover{
+
+.gtxt h3:hover {
     color: var(--primarycolor);
 }
-.gtxt p{
+
+.gtxt p {
     color: var(--h-text);
 }
+
 /* --------features css--------- */
-.box{
+.box {
     background-color: var(--white-color);
-    box-shadow:rgba(0, 0, 255, 0.5) 0px 0px 10px 0px;
+    box-shadow: rgba(0, 0, 255, 0.5) 0px 0px 10px 0px;
     padding: 15px 15px 15px 18px;
     margin: 5px;
     text-align: center;
     height: 150px;
     width: 200px;
-    cursor: pointer; 
+    cursor: pointer;
     transition: all 0.5s;
-} 
+}
+
 .box:hover {
     background-color: var(--primarycolor);
     color: var(--white-color);
 }
-.box:hover i{
+
+.box:hover i {
     color: var(--white-color);
 }
-.box i{
+
+.box i {
     font-size: 50px;
     padding: 15px;
 }
-.fa-people-pulling{
+
+.fa-people-pulling {
     color: var(--sb6-color);
 }
-.fa-diagram-project{
+
+.fa-diagram-project {
     color: var(--primarycolor);
 }
-.fa-computer{
+
+.fa-computer {
     color: var(--sb5-color);
 }
-.fa-file-contract{
+
+.fa-file-contract {
     color: var(--sb6-color);
 }
-.fa-cubes{
+
+.fa-cubes {
     color: var(--primarycolor);
 }
-.fa-laptop-medical{
+
+.fa-laptop-medical {
     color: var(--sb5-color);
 }
+
 /* snd part features css */
-.fet-txt .hed h2{
+.fet-txt .hed h2 {
     margin: 0px;
     padding: 0px;
 }
-.fet-txt .hed p{
+
+.fet-txt .hed p {
     margin-left: 62px;
     text-align: start;
 }
+
 .fet-txt ul li {
     position: relative;
     z-index: 1;
@@ -605,16 +698,19 @@ h1{
     margin: 0 10px 10px 0;
     border-radius: 4px;
     overflow: hidden;
-    transition:all 0.5s;
+    transition: all 0.5s;
 }
-.fa-square-check{
-  color: var(--primarycolor);
+
+.fa-square-check {
+    color: var(--primarycolor);
 }
-.fet-txt ul li:hover{
+
+.fet-txt ul li:hover {
     color: var(--white-color);
-    
+
 }
-.fet-txt ul li::after{
+
+.fet-txt ul li::after {
     background-color: var(--primarycolor);
     position: absolute;
     content: "";
@@ -623,48 +719,57 @@ h1{
     transition: all 0.5s;
     height: 100%;
     width: 0;
-    z-index:-1;
+    z-index: -1;
 }
-.fet-txt ul li:hover::after{
+
+.fet-txt ul li:hover::after {
     width: 100%;
 }
 
-.fet-txt ul li:hover .fa-square-check{
+.fet-txt ul li:hover .fa-square-check {
     color: var(--white-color);
     background-color: var(--pink-color);
 }
+
 /* ----------team css----------- */
-.tm .teamall{
+.tm .teamall {
     margin: 5px;
     box-shadow: 0px 0px 10px -2px var(--text);
 }
-img{
+
+img {
     transition: all 0.5s;
 }
 
 .teamall .tmimg {
-    overflow: hidden;   
+    overflow: hidden;
 }
-.teamall:hover img{
+
+.teamall:hover img {
     transform: scale(1.2);
 }
-.tmnm{
+
+.tmnm {
     text-align: center;
     padding: 10px;
     transition: all 0.5s;
     background-color: var(--white-color);
 }
-.teamall:hover .tmnm{
+
+.teamall:hover .tmnm {
     background-color: var(--primarycolor);
     color: var(--white-color);
 }
-.tm{
+
+.tm {
     transition: all 0.5s;
     position: relative;
 }
+
 .tm:hover {
     transform: translateY(-10px);
 }
+
 .tm .sobtn {
     position: absolute;
     top: 10%;
@@ -678,19 +783,96 @@ img{
     transition: all 0.5s cubic-bezier(0.97, 0.64, 0.19, 1.21);
     visibility: hidden;
 }
-.sobtn i{
+
+.sobtn i {
     background-color: var(--white-color);
     color: var(--primarycolor);
     margin: 5px;
     font-size: 20px;
-} 
-.teamall:hover .sobtn{
+}
+
+.teamall:hover .sobtn {
     opacity: 1;
     visibility: visible;
     top: 40%;
 }
+
 .fa-facebook-f:hover,
 .fa-twitter:hover,
-.fa-instagram:hover{
+.fa-instagram:hover {
     color: var(--pink-color);
+}
+
+/* ----------feedback video css-------------- */
+.vid{
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    background-color: var(--primarycolor);
+    background-image: url("../photo/solution-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+    padding-top: 100px;
+}
+.vid::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    height: 100%;
+    right: 0;
+    z-index: -1;
+}
+.fhed {
+    text-align: start;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--primarycolor);
+    text-transform: uppercase;
+}
+.f{
+    color: var(--pink-color);
+}
+.fhed h2{
+    text-align: start;
+    margin-left:0px;
+    padding-bottom: 10px;
+    color: var(--white-color);
+}
+.fhed a{
+    margin: 0 auto;
+}
+
+.fdis{
+    padding-bottom: 35px;
+    color: var(--white-color);
+}
+.playicon a      {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    color: var(--primarycolor);
+    position: relative;
+    z-index: 1;
+}
+.picon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playicon a i::before {
+    font-size: 45px;
+    left: 30px;
+    top: 24px;
+    position: absolute;
 }
