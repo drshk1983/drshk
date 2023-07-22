@@ -804,7 +804,7 @@ img {
 }
 
 /* ----------feedback video css-------------- */
-.vid{
+.vid {
     height: 600px;
     position: relative;
     z-index: 1;
@@ -817,6 +817,7 @@ img {
     padding-bottom: 200px;
     padding-top: 100px;
 }
+
 .vid::after {
     content: "";
     position: absolute;
@@ -828,6 +829,7 @@ img {
     right: 0;
     z-index: -1;
 }
+
 .fhed {
     text-align: start;
     font-size: 15px;
@@ -836,24 +838,28 @@ img {
     color: var(--primarycolor);
     text-transform: uppercase;
 }
-.f{
+
+.f {
     color: var(--pink-color);
 }
-.fhed h2{
+
+.fhed h2 {
     text-align: start;
-    margin-left:0px;
+    margin-left: 0px;
     padding-bottom: 10px;
     color: var(--white-color);
 }
-.fhed a{
+
+.fhed a {
     margin: 0 auto;
 }
 
-.fdis{
+.fdis {
     padding-bottom: 35px;
     color: var(--white-color);
 }
-.playicon a      {
+
+.playicon a {
     display: inline-block;
     width: 90px;
     height: 90px;
@@ -864,7 +870,8 @@ img {
     position: relative;
     z-index: 1;
 }
-.picon{
+
+.picon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -875,4 +882,251 @@ img {
     left: 30px;
     top: 24px;
     position: absolute;
+}
+
+/* -----------feedback video css2----------- */
+.feedback {
+    margin-top: -100px;
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+}
+
+.feedback::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60%;
+    right: 0;
+    z-index: -1;
+    background-color: var(--primarycolor);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.ftitle {
+    color: var(--white-color);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ftitle h2 {
+    color: var(--white-color);
+}
+
+.feedback .fdis .row {
+    margin: 0px 100px;
+}
+
+.fedis {
+    padding: 30px;
+    margin: 0px 10px;
+    background-color: white;
+    box-shadow: 0px 5px 15px #f1f1f1;
+    color: var(--h-text);
+    font-size: 18px;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.cliant img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 0%;
+    position: absolute;
+}
+
+.cliant h3 {
+    color: var(--text);
+    margin-top: 40px;
+    padding-left: 100px;
+    font-style: normal;
+}
+
+.cliant p {
+    color: var(--primarycolor);
+    font-size: 15px;
+    padding-left: 100px;
+    font-style: normal;
+}
+
+/* -----plan css----------- */
+.pl {
+    padding-bottom: 0px;
+}
+
+.pdis {
+    align-items: center;
+    color: var(--h-text);
+    padding: 0px 300px 0px 300px;
+    padding-bottom: 50px;
+}
+
+.pbox {
+    width: 80%;
+    height: auto;
+    margin: 40px 30px 30px 20px;
+    border: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 255, 0.22);
+    transition: all 0.5s;
+}
+
+.pbox h3 {
+    padding: 30px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.ph1 {
+    background-color: var(--primarycolor);
+}
+
+.ph2 {
+    background-color: var(--lb2-color);
+}
+
+.ph3 {
+    background-color: var(--lb3-color);
+}
+
+.pla {
+    color: var(--h-text);
+    margin: 15px 0px;
+    text-align: center;
+}
+
+.amt {
+    font-size: 50px;
+    color: var(--text);
+}
+
+.pbtn {
+    color: var(--primarycolor);
+    margin: 30px;
+
+    text-align: center;
+    transition: all 0.5s;
+
+}
+
+.btn1 {
+    color: var(--primarycolor);
+}
+
+.btn2 {
+    color: var(--lb2-color);
+}
+
+.btn3 {
+    color: var(--lb3-color);
+}
+
+.plist li {
+    padding: 5px 20px 5px 0px;
+    margin: 0px;
+}
+
+.plist i {
+    padding-right: 30px;
+    margin: 0px;
+}
+
+.li1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--h-text);
+    line-height: 1.8;
+    text-transform: lowercase;
+}
+
+.plist .li1 .fa-check {
+    color: var(--sb4-color);
+}
+
+.plist .li1 .fa-xmark {
+    color: var(--lb2-color);
+}
+
+.pbox:hover {
+    transform: translatey(-20px);
+}
+
+.pbtn a {
+    position: relative;
+}
+
+.pbtn a::before {
+    position: absolute;
+    transition: all 0.5s;
+    content: "";
+    bottom: 0;
+    height: 2px;
+    width: 0px;
+    left: 0;
+    background-color: var(--primarycolor);
+
+}
+
+.pbtn .btn2::before {
+    background-color: var(--lb2-color);
+}
+
+.pbtn .btn3::before {
+    background-color: var(--lb3-color);
+}
+
+.pbtn a:hover::before {
+    width: 100%;
+}
+
+
+/* -------partner css-------- */
+.ptnm {
+    text-align: center;
+    margin-bottom: 10px;
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0 5px;
+}
+.ptnm a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+.ptnm a img:first-child{
+    position: relative;
+    transition: all 0.5s;
+}
+.ptnm a img:last-child{
+display: inline-block !important;
+transition: all 0.5s;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , 200%);
+}
+.ptnm a:hover img:first-child{
+transform: translateY(-200%);
+}
+.ptnm a:hover img:last-child{
+transform: translate(-50% , -50%);
+
+}
+/* --------latest newa css------------ */
+.cont1{
+    background-color: var(--gray-color);
+    margin: 0 auto;
+    padding: 100px 0px 70px;
 }
