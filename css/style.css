@@ -780,7 +780,6 @@ img {
     transform: translate(-50%);
     border-radius: 50px;
     opacity: 0;
-    transition: all 0.5s cubic-bezier(0.97, 0.64, 0.19, 1.21);
     visibility: hidden;
 }
 
@@ -1096,7 +1095,8 @@ img {
     max-width: 20%;
     padding: 0 5px;
 }
-.ptnm a{
+
+.ptnm a {
     display: block;
     position: relative;
     overflow: hidden;
@@ -1105,28 +1105,328 @@ img {
     border-radius: 5px;
     padding: 20px;
 }
-.ptnm a img:first-child{
+
+.ptnm a img:first-child {
     position: relative;
     transition: all 0.5s;
 }
-.ptnm a img:last-child{
-display: inline-block !important;
-transition: all 0.5s;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50% , 200%);
+
+.ptnm a img:last-child {
+    display: inline-block !important;
+    transition: all 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
 }
-.ptnm a:hover img:first-child{
-transform: translateY(-200%);
+
+.ptnm a:hover img:first-child {
+    transform: translateY(-200%);
 }
-.ptnm a:hover img:last-child{
-transform: translate(-50% , -50%);
+
+.ptnm a:hover img:last-child {
+    transform: translate(-50%, -50%);
 
 }
+
 /* --------latest newa css------------ */
 .cont1{
     background-color: var(--gray-color);
-    margin: 0 auto;
     padding: 100px 0px 70px;
+}
+.n1 .newsall {
+    margin: 5px;
+    box-shadow: 0px 0px 10px -2px var(--text);
+    background-color: var(--white-color);
+}
+
+img {
+    transition: all 0.5s;
+}
+
+.newsall .nimg {
+    overflow: hidden;
+}
+
+.newsall:hover img {
+    transform: scale(1.2) rotate(5deg);
+}
+.ndis{
+    padding: 10px;
+    padding-bottom: 20px;
+
+}
+.nadis{
+    text-align: start;
+    
+    transition: all 0.5s;
+    background-color: var(--white-color);
+}
+.nadis p{
+    line-height: 1.8;
+    margin-top: 20px;
+    color: var(--h-text);
+}
+
+.newsall:hover .nadis {
+    transform: translatey(-30px);
+}
+
+.n1 {
+    position: relative;
+}
+.ntime ul li {
+    display: inline-block;
+    font-size: 15px;
+    color: var(--h-text);
+    position: relative;
+}
+
+.n1 .nbtn {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    padding-bottom: 10px;
+    bottom: 2%;
+    transition: all 0.5s;
+}
+
+.newsall:hover .nbtn {
+    opacity: 1;
+    visibility: visible;
+    
+}
+.n1 .ntime a{
+    color: var(--pink-color);
+   
+}
+.nadis a:hover{
+    color: var(--primarycolor);
+}
+.n1 .ntime{
+    position: relative;
+    visibility: visible;
+    margin-bottom: 15px;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.newsall:hover .ntime{
+    opacity: 0;
+    visibility: hidden;
+}
+.ndis .nbtn{
+    color: var(--primarycolor);
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.ndis .nbtn::after{
+    background-color: var(--primarycolor);
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+    height: 1px;
+    width: 0;
+  
+}
+.ndis .nbtn:hover::after{
+    width: 100%;
+}
+/* -------sub css---------- */
+.simg {
+    position: relative;
+    background-image: url(../photo/search.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    z-index: 1;
+    height: 400px;
+    overflow: hidden;
+}
+
+.simg::after {
+    position: absolute;
+    content: "";
+    background-color: var(--primarycolor);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.scon {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    z-index: 3;
+    left: 350px;
+}
+
+.simg .hed h2 {
+    margin-bottom: 0;
+    color: var(--white-color);
+}
+
+.simg .hed p {
+    color: var(--white-color);
+}
+
+.sform input {
+    position: relative;
+    width: 100%;
+    padding: 25px;
+    border-radius: 50px;
+    border: none;
+    
+}
+
+.scon .sbtn {
+    position: absolute;
+    right: 1%;
+    border-radius: 50px;
+    background-color: var(--primarycolor);
+    color: var(--white-color);
+    width: 30%;
+    padding: 20px;
+    bottom: 4px;
+    right: 5px;
+    z-index: 5;
+    cursor: pointer;
+        
+}
+
+/* ----------footer css------------ */
+footer {
+    background-color: var(--footer-color);  
+}
+
+.ftcon h3 {
+    margin-bottom: 35px;
+    color: var(--white-color);
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #4e5e6a;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ftcon .col4 {
+    padding: 0 10px;
+    height: 415px;
+}
+
+.ftcon ul li i {
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--pink-color);
+}
+
+.ftcon ul li {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 55px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    color: var(--white-color);
+}
+
+.ftcon ul li {
+    margin-bottom: 30px;
+}
+.ftlink ul li{
+    margin-bottom: 10px;
+}
+
+.ftcon ul li span {
+    display: block;
+    padding-bottom:5px ;
+}
+
+.ftcon ul li a {
+    color: var(--white-color);
+    font-size: 22px;
+    transition: all 0.5s;
+    font-weight: 700;
+}
+
+.ftcon ul li a:hover {
+    color: var(--pink-color);
+}
+.ftcon .ftsocial{
+    padding: 0;
+}
+
+.col4 .ftsocial li {
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.ftsocial li a {
+    display: inline-block;
+}
+
+.ftsocial li a i {
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+    color: var(--white-color);
+}
+
+.ftsocial li a i:hover {
+    color: var(--pink-color);
+    transform: translateY(-2px)
+}
+
+.ftlink ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.ftlink ul li a {
+    transition: all 0.5s;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.ftlink ul li a:hover {
+    color: var(--pink-color);
+}
+
+.ftlink ul li {
+    flex: 0 0 45%;
+    max-width: 45%;
+    padding: 0px 12px 15px;
+}
+.ftimg .col4 a{
+    transition: all 0.3s;
+}
+.ftimg .col4 img{
+   padding: 0 5px 10px;
+}
+.ftimg .col4{
+    padding: 0;
+    height: auto;
+   
+}
+.ftimg .col4 a:hover{
+    opacity: 0.5;
+}
+/* ----------for below line------------- */
+.bline{
+    height: 2px;
+    width: 100%;
+    background-color: var(--white-color);
+   
+}
+.linelink{
+display: flex;
+padding-top: 20px;
+color: var(--white-color);
 }
