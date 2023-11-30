@@ -1130,11 +1130,10 @@ img {
 }
 
 /* --------latest newa css------------ */
-.cont1 {
+.cont1{
     background-color: var(--gray-color);
     padding: 100px 0px 70px;
 }
-
 .n1 .newsall {
     margin: 5px;
     box-shadow: 0px 0px 10px -2px var(--text);
@@ -1152,21 +1151,18 @@ img {
 .newsall:hover img {
     transform: scale(1.2) rotate(5deg);
 }
-
-.ndis {
+.ndis{
     padding: 10px;
     padding-bottom: 20px;
 
 }
-
-.nadis {
+.nadis{
     text-align: start;
-
+    
     transition: all 0.5s;
     background-color: var(--white-color);
 }
-
-.nadis p {
+.nadis p{
     line-height: 1.8;
     margin-top: 20px;
     color: var(--h-text);
@@ -1179,7 +1175,6 @@ img {
 .n1 {
     position: relative;
 }
-
 .ntime ul li {
     display: inline-block;
     font-size: 15px;
@@ -1199,39 +1194,33 @@ img {
 .newsall:hover .nbtn {
     opacity: 1;
     visibility: visible;
-
+    
 }
-
-.n1 .ntime a {
+.n1 .ntime a{
     color: var(--pink-color);
-
+   
 }
-
-.nadis a:hover {
+.nadis a:hover{
     color: var(--primarycolor);
 }
-
-.n1 .ntime {
+.n1 .ntime{
     position: relative;
     visibility: visible;
     margin-bottom: 15px;
     opacity: 1;
     transition: all 0.5s;
 }
-
-.newsall:hover .ntime {
+.newsall:hover .ntime{
     opacity: 0;
     visibility: hidden;
 }
-
-.ndis .nbtn {
+.ndis .nbtn{
     color: var(--primarycolor);
     position: relative;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
-
-.ndis .nbtn::after {
+.ndis .nbtn::after{
     background-color: var(--primarycolor);
     position: absolute;
     content: "";
@@ -1240,13 +1229,11 @@ img {
     transition: all 0.5s;
     height: 1px;
     width: 0;
-
+  
 }
-
-.ndis .nbtn:hover::after {
+.ndis .nbtn:hover::after{
     width: 100%;
 }
-
 /* -------sub css---------- */
 .simg {
     position: relative;
@@ -1294,7 +1281,7 @@ img {
     padding: 25px;
     border-radius: 50px;
     border: none;
-
+    
 }
 
 .scon .sbtn {
@@ -1309,12 +1296,12 @@ img {
     right: 5px;
     z-index: 5;
     cursor: pointer;
-
+        
 }
 
 /* ----------footer css------------ */
 footer {
-    background-color: var(--footer-color);
+    background-color: var(--footer-color);  
 }
 
 .ftcon h3 {
@@ -1353,14 +1340,13 @@ footer {
 .ftcon ul li {
     margin-bottom: 30px;
 }
-
-.ftlink ul li {
+.ftlink ul li{
     margin-bottom: 10px;
 }
 
 .ftcon ul li span {
     display: block;
-    padding-bottom: 5px;
+    padding-bottom:5px ;
 }
 
 .ftcon ul li a {
@@ -1373,8 +1359,7 @@ footer {
 .ftcon ul li a:hover {
     color: var(--pink-color);
 }
-
-.ftcon .ftsocial {
+.ftcon .ftsocial{
     padding: 0;
 }
 
@@ -1419,53 +1404,43 @@ footer {
     max-width: 45%;
     padding: 0px 12px 15px;
 }
-
-.ftimg .col4 a {
+.ftimg .col4 a{
     transition: all 0.3s;
 }
-
-.ftimg .col4 img {
-    padding: 0 5px 10px;
+.ftimg .col4 img{
+   padding: 0 5px 10px;
 }
-
-.ftimg .col4 {
+.ftimg .col4{
     padding: 0;
     height: auto;
-
+   
 }
-
-.ftimg .col4 a:hover {
+.ftimg .col4 a:hover{
     opacity: 0.5;
 }
-
 /* ----------for below line------------- */
-.bline {
-    border-top: 1px solid var(--white-color);
-    margin: 50px 0 0;
+.bline{
+    border-top:1px solid var(--white-color);
+   margin: 50px 0 0; 
     margin-top: 50px;
-    padding: 25px 0;
-
+    padding: 25px 0 ;
+   
 }
-
-.linelink p {
-    margin-left: 0px;
+.linelink p{
+    margin-left:0px ;
 }
-
-.linelink .lline {
+.linelink .lline{
     margin-right: 0px;
 }
+.linelink{
+display: flex;
+justify-content: space-between;
 
-.linelink {
-    display: flex;
-    justify-content: space-between;
-
+color: var(--white-color);
+}
+.linelink a{
     color: var(--white-color);
 }
-
-.linelink a {
-    color: var(--white-color);
-}
-
-.linelink a:hover {
+.linelink a:hover{
     color: var(--pink-color);
 }
