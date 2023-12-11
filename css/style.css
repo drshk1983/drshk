@@ -988,10 +988,8 @@ img {
 .pbtn {
     color: var(--primarycolor);
     margin: 30px;
-
     text-align: center;
     transition: all 0.5s;
-
 }
 
 .btn1 {
@@ -1052,7 +1050,6 @@ img {
     width: 0px;
     left: 0;
     background-color: var(--primarycolor);
-
 }
 
 .pbtn .btn2::before {
@@ -1107,7 +1104,6 @@ img {
 
 .ptnm a:hover img:last-child {
     transform: translate(-50%, -50%);
-
 }
 
 /* --------latest newa css------------ */
@@ -1137,12 +1133,10 @@ img {
 .ndis {
     padding: 10px;
     padding-bottom: 20px;
-
 }
 
 .nadis {
     text-align: start;
-
     transition: all 0.5s;
     background-color: var(--white-color);
 }
@@ -1180,12 +1174,10 @@ img {
 .newsall:hover .nbtn {
     opacity: 1;
     visibility: visible;
-
 }
 
 .n1 .ntime a {
     color: var(--pink-color);
-
 }
 
 .nadis a:hover {
@@ -1221,7 +1213,6 @@ img {
     transition: all 0.5s;
     height: 1px;
     width: 0;
-
 }
 
 .ndis .nbtn:hover::after {
@@ -1275,7 +1266,6 @@ img {
     padding: 25px;
     border-radius: 50px;
     border: none;
-
 }
 
 .scon .sbtn {
@@ -1290,7 +1280,6 @@ img {
     right: 5px;
     z-index: 5;
     cursor: pointer;
-
 }
 
 /* ----------footer css------------ */
@@ -1412,7 +1401,6 @@ footer {
 .ftimg .col4 {
     padding: 0;
     height: auto;
-
 }
 
 .ftimg .col4 a:hover {
@@ -1425,7 +1413,6 @@ footer {
     margin: 50px 0 0;
     margin-top: 50px;
     padding: 25px 0;
-
 }
 
 .linelink p {
@@ -1439,7 +1426,6 @@ footer {
 .linelink {
     display: flex;
     justify-content: space-between;
-
     color: var(--white-color);
 }
 
